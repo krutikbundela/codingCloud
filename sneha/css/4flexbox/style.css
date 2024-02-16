@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 50px;
+}
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8b2d2d;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #8b2d2d;
+
+  .logo {
+    a {
+      color: aquamarine;
+    }
+  }
+
+  .link {
+    a {
+      color: rgb(234, 187, 0);
+    }
+  }
+
+  .icons {
+    a {
+      i {
+        color: blueviolet;
+      }
+    }
+  }
+}
+
+main {
+  display: flex;
+  /* flex: 1; */
+
+  .about {
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #20b2aa;
+
+    p {
+      width: 90%;
+    }
+  }
+
+  .main2 {
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #87cefa;
+
+    p {
+      width: 90%;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8b2d2d;
+}
+
+@media (max-width: 360px) {
+  /* 360 ya usse kamm 360 300 200 100 0.... */
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      margin: 10px 0px;
+    }
+    .link {
+      margin: 10px 0px;
+    }
+    .icons {
+      margin: 10px 0px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 220px) {
+  nav {
+    .link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
