@@ -1,0 +1,18 @@
+* {
+  margin: 30px;
+  padding: 20px;
+}
+
+h1,
+p {
+  color: rgb(0, 0, 0);
+  background-color: antiquewhite;
+}
+
+#tirth {
+  background-color: chartreuse;
+}
+
+.krutik {
+  background-color: crimson;
+}
