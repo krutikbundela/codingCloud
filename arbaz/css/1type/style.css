@@ -4,10 +4,18 @@
   font-family: "Protest Revolution", sans-serif;
   font-weight: 700;
   font-style: italic;
+  margin: 50px;
 }
 
-.sneha {
-  background: #1b8e62;
+.forpadding {
+  width: 100%;
+  /* padding: 50px; */
+
+  .sneha {
+    margin: 40px;
+    background: #1b8e62;
+    padding: 10px;
+  }
 }
 
 #raj {
