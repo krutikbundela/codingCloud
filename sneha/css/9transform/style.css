@@ -1,0 +1,14 @@
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transition: 1s linear;
+}
+
+div:hover {
+  width: 300px;
+  height: 300px;
+  /* transform: translate(200px,100px); */
+  transform: rotateZ(180deg);
+}
