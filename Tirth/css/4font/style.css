@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Micro+5&family=Montserrat&family=Poppins&display=swap");
+
+.p1 {
+  font-family: "Micro 5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", sans-serif;
+}
