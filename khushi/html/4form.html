@@ -12,6 +12,7 @@
         type="text"
         name="name"
         id="naam"
+        value="gygyuyu"
         placeholder="Enter Your Full Name"
         required
       />
@@ -45,6 +46,43 @@
       />
       <br />
       <br />
+
+      <label>Hobby:</label>
+      <input type="checkbox" id="hobby1" name="hobby" value="Reading" />
+      <label for="hobby1">Reading</label>
+      <input type="checkbox" id="hobby2" name="hobby" value="Cooking" />
+      <label for="hobby2">Cooking</label>
+      <input type="checkbox" id="hobby3" name="hobby" value="Gardening" />
+      <label for="hobby3">Gardening</label>
+
+      <br />
+      <br />
+      <label>Mother Tongue:</label>
+      <div>
+        <input type="radio" id="hindi" name="motherTongue" value="Hindi" />
+        <label for="hindi">Hindi</label>
+        <input type="radio" id="english" name="motherTongue" value="English" />
+        <label for="english">English</label>
+        <input
+          type="radio"
+          id="gujarati"
+          name="motherTongue"
+          value="Gujarati"
+        />
+        <label for="gujarati">Gujarati</label>
+      </div>
+
+      <label for="address">Enter Address:</label>
+      <textarea
+        name="address"
+        id="address"
+        cols="50"
+        rows="4"
+        placeholder="ENter Address"
+      ></textarea>
+
+      <br />
+      <br />
       <label for="search">Enter Search</label>
       <input
         type="search"
@@ -52,9 +90,13 @@
         id="search"
         placeholder="Enter Your Full Name"
       />
-
       <br />
       <br />
+      <label for="myfile">Select a file:</label>
+      <input type="file" id="myfile" name="myfile" multiple accept="image/*" />
+      <br />
+      <br />
+      <input type="hidden" />
       <input type="submit" value="Submit" />
       <input type="reset" value="Reset" />
     </form>
