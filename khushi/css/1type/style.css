@@ -1,0 +1,45 @@
+* {
+  margin: 10px;
+}
+
+h3 {
+  color: rgb(105, 105, 142);
+  background-color: rgb(157, 207, 190);
+}
+
+.khushi {
+  color: rgb(169, 228, 59);
+  background-color: rgb(251, 0, 0);
+}
+
+.krutik {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+h3.krutik {
+  background-color: rgb(255, 255, 0);
+}
+
+
+p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#para {
+  color: aquamarine;
+}
+
+
+/* for direct child of section  */
+/* .section  > p {
+    color: aqua;
+} */
+
+
+/* for every child of section  */
+  /* .section   p {
+    color: aqua;
+  } */
+

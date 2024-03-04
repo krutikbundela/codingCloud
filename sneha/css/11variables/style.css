@@ -1,0 +1,18 @@
+:root {
+  --paragraph: rgb(107, 255, 136);
+  --header: rgb(235, 8, 152);
+  --krutik: #244034;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--krutik);
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: var(--paragraph);
+}
