@@ -9,36 +9,51 @@
 //? Number: Represents numeric values, including integers and floating-point numbers.
 // Example:
 // var myFavNum = -5;
+// var myFavNum2 = 48.678;
+// console.log("myFavNum2:", myFavNum2);
 // console.log(myFavNum);
 
 //? String: Represents a sequence of characters enclosed in single or double quotes.
 // Example:
-// var myName = 'vinod';
+// var myName = 'krutik';
+// var myName2 = "arbaz";
 // console.log(myName);
 
 //? Boolean: Represents a logical entity with two values: true or false.
 // Example:
 // var isRaining = false;
 // var areYouAwesome = true;
+// console.log("areYouAwesome:", areYouAwesome);
 // console.log(isRaining);
 
 //? undefined: Represents the absence of a value or an uninitialized variable.
 // Example:
-// var vinod;
-// console.log(vinod);
+var krutik; //Declaration
+// console.log(" before krutik:", krutik);
+
+krutik = "gvvudcwe"; // initialization
+// console.log(" after krutik:", krutik);
+
+var arbaz = "hubuybuy"; // Declaration & initialization at same time
+
+// console.log(krutik);
 
 //? Null: Represents the absence of a value. It is often used to explicitly indicate that a variable or object property has no assigned value.
 // Example:
 // var badMemories = null;
 // console.log(badMemories);
 
+// badMemories = "uygyyuguygfu";
+
 //? BigInt: Represents integers of arbitrary precision (available since ECMAScript 2020).
 // Example:
 // const bigNumber = 1234567890123456789012345678901234567890n;
+// console.log("bigNumber:", bigNumber);
 
 //? Symbol: Represents a unique and immutable data type, often used to create unique identifiers.
 // Example:
-// const mySymbol = Symbol("description");
+// const mySymbol = Symbol("ihgibguygbb");
+// console.log("mySymbol:", mySymbol);
 
 //! ============================
 //! Data Types Interview Questions
@@ -67,26 +82,34 @@
 // console.log(myName);
 // console.log(typeof myName);
 
+// var name1 = "sneha"
+// console.log("name:", name1);
+// console.log(" data type  of name:", typeof name1);
+
+
 //? 3: What is the result of `typeof null` in JavaScript❓
 // var badMemories = null;
 // console.log(badMemories);
-// console.log(typeof null);
+// console.log(typeof badMemories);
 
 //? 4: What are primitive data types in JavaScript❓
 
 //? 5: Convert a string to a number?
 // We just need to add the '+' sign before the string
 // Example:
-// var myFavNum = "10";
+var myFavNum = "10 +10";
 // console.log(typeof +myFavNum);
+// console.log(+myFavNum);
 // console.log(typeof Number(myFavNum));
+// console.log( Number(myFavNum));
 
 //? 6: Convert a number to a string?
 // We just need to add an empty string after the number
 // Example:
 
-// var str = 5;
-// console.log(typeof str);
+var str = 5 + "10" ;
+console.log(str);
+console.log(typeof str);
 
 //? 7: Explain the concept of truthy and falsy values in JavaScript. Provide examples.❓
 //* In JavaScript, values are either considered "truthy" or "falsy" when evaluated in a boolean context.

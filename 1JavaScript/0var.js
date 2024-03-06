@@ -10,27 +10,36 @@
 
 // console.log("welcome to best js course ");
 
-// var myAge = 30;
+// var myAge;
+// myAge = 2000;
 // console.log(myAge);
-
 
 // const , let , var
 
-// const krutik = "hello world"
-// console.log("krutik:", krutik);
+// var krutik1234 = "hello world";
+// console.log("before changing:", krutik1234);
 
+// arbaz_123 = "krutik";
+// console.log("after changing:", krutik1234);
 
 //  const conditon = true
 
-
 //! Let's test
-// var my_firstName = "John";
+var my_firstName = "John";
+console.log("before:", my_firstName);
+
+my_firstName = "sneha";
+ var my_firstName1 = 65456465;
+console.log("after changing:", my_firstName);
 //? Explanation: This is a valid variable name. It starts with a letter, and the subsequent characters include letters, numbers, and an underscore. Follows JavaScript naming rules.
 
 // var _myLastName$ = "Doe";
+// console.log("_myLastName:", _myLastName$);
 //? Explanation: This is a valid variable name. It starts with an underscore, and the subsequent characters include letters, numbers, and a dollar sign. Follows JavaScript naming rules.
 
 // var 123myAge = 25;
+var myAge123 = 25;
+// console.log("myAge123:", myAge123);
 //? Explanation: This is not a valid variable name. It starts with a number, which is not allowed as per JavaScript naming rules. Variable names cannot begin with a digit.
 
 // var $cityName = "New York";
