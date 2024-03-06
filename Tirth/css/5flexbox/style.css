@@ -19,6 +19,7 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   .logo {
     display: flex;
@@ -85,7 +86,7 @@ footer {
   height: 10vh;
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   nav {
     display: flex;
     flex-direction: column;
@@ -102,32 +103,25 @@ footer {
       margin: 7px 0px;
     }
   }
-}
+} */
 
-@media (max-width: 430px) {
+/* @media (max-width: 430px) {
   main {
     height: 60vh;
 
-    /* .main_left{
-      flex: 1;
-      
-    }
-    .main_right{
-      flex: 1;
 
-    } */
   }
-}
+} */
 
-@media (max-width: 300px) {
+/* @media (max-width: 300px) {
   h1 {
     font-size: 14px;
   }
   h2 {
     font-size: 10px;
   }
-}
-@media (max-width: 235px) {
+} */
+/* @media (max-width: 235px) {
   nav {
     .nav_links {
       display: flex;
@@ -135,5 +129,54 @@ footer {
       justify-content: center;
       align-items: center;
     }
+  }
+} */
+
+@media (max-width: 460px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+
+    .icons,
+    .logo,
+    .nav_links {
+      margin: 10px 0px;
+    }
+  }
+
+  main {
+    .main_left {
+      flex: 1;
+    }
+    .main_right {
+      flex: 1;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 280px) {
+  nav {
+    .nav_links {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  main {
+    height: 80vh;
   }
 }
