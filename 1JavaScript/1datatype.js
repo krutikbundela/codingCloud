@@ -22,19 +22,20 @@
 //? Boolean: Represents a logical entity with two values: true or false.
 // Example:
 // var isRaining = false;
+// isRaining = "vgvhgvh";
 // var areYouAwesome = true;
 // console.log("areYouAwesome:", areYouAwesome);
 // console.log(isRaining);
 
 //? undefined: Represents the absence of a value or an uninitialized variable.
 // Example:
-var krutik; //Declaration
+// var krutik; //Declaration
 // console.log(" before krutik:", krutik);
 
-krutik = "gvvudcwe"; // initialization
+// krutik = "gvvudcwe"; // initialization
 // console.log(" after krutik:", krutik);
 
-var arbaz = "hubuybuy"; // Declaration & initialization at same time
+// var arbaz = "hubuybuy"; // Declaration & initialization at same time
 
 // console.log(krutik);
 
@@ -78,9 +79,9 @@ var arbaz = "hubuybuy"; // Declaration & initialization at same time
 
 //? 2: What is the purpose of typeof operator in JavaScript❓
 
-// var myName = 1;
-// console.log(myName);
-// console.log(typeof myName);
+// var myName = "100";
+// console.log("value of var:",myName);
+// console.log("datatype of var:  ",typeof myName);
 
 // var name1 = "sneha"
 // console.log("name:", name1);
@@ -88,7 +89,7 @@ var arbaz = "hubuybuy"; // Declaration & initialization at same time
 
 
 //? 3: What is the result of `typeof null` in JavaScript❓
-// var badMemories = null;
+var badMemories = null;
 // console.log(badMemories);
 // console.log(typeof badMemories);
 
@@ -97,9 +98,11 @@ var arbaz = "hubuybuy"; // Declaration & initialization at same time
 //? 5: Convert a string to a number?
 // We just need to add the '+' sign before the string
 // Example:
-var myFavNum = "10 +10";
-// console.log(typeof +myFavNum);
+var myFavNum = "10";
+// console.log(myFavNum);
+// console.log("myFavNum:", typeof myFavNum);
 // console.log(+myFavNum);
+// console.log(typeof +myFavNum);
 // console.log(typeof Number(myFavNum));
 // console.log( Number(myFavNum));
 
@@ -107,9 +110,9 @@ var myFavNum = "10 +10";
 // We just need to add an empty string after the number
 // Example:
 
-var str = 5 + "10" ;
-console.log(str);
-console.log(typeof str);
+// var str = 5 + "10" ;
+// console.log(str);
+// console.log(typeof str);
 
 //? 7: Explain the concept of truthy and falsy values in JavaScript. Provide examples.❓
 //* In JavaScript, values are either considered "truthy" or "falsy" when evaluated in a boolean context.
@@ -130,8 +133,8 @@ console.log(typeof str);
 
 //? 8: To check if a non-empty string is truthy or falsy in JavaScript, we can directly use if statement.
 
-// var myName = -5;
-// if (true) {
+// var myName = null;
+// if (myName) {
 //   console.log("this is truthy value");
 // } else {
 //   console.log("its a falsy value");
@@ -145,18 +148,23 @@ console.log(typeof str);
 //? parseInt and parseFloat are both functions in JavaScript used for converting strings to numbers, but they have different use cases.
 
 //* parseInt: Definition: parseInt is used to parse a string and convert it to an integer (whole number).
-// const myString = "42";
+// const myString = "8798798.65464946846";
+// const myString2 = false;
 // const myNumber = parseInt(myString);
-// console.log(myNumber); // Output: 42
+// const myNumber2 = parseInt(myString2);
+// console.log(myNumber);
+// console.log(typeof myNumber);
+// console.log(myNumber2);
+// console.log(typeof myNumber2);
 
 // const myString = "42.5";
 // const myNumber = parseInt(myString);
 // console.log(myNumber); // Output: 42
 
 //* parseFloat: Definition: parseFloat is used to parse a string and convert it to a floating-point number (decimal number).
-// const myString = "42.5";
-// const myNumber = parseFloat(myString);
-// console.log(myNumber); // Output: 42.5
+const myString = "42.544974";
+const myNumber = parseFloat(myString);
+console.log(myNumber); 
 
 //TODO  Key Differences:
 //? parseInt is used for converting to integers and ignores anything after the decimal point.
