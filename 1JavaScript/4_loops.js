@@ -10,9 +10,9 @@
 
 //? Syntax
 // if (condition) {
-//  // Code to be executed if the condition is true
+//   Code to be executed if the condition is true
 // } else {
-//   // Code to be executed if the condition is false
+//    Code to be executed if the condition is false
 // }
 
 //? Let check the temperature
@@ -24,14 +24,17 @@
 // }
 
 //? We can also use an else if clause to check additional conditions:
-// var temperature = 15;
-// if (temperature >= 30) {
-//   console.log("lets go to beach");
-// } else if (temperature >= 20 && temperature < 30) {
-//   console.log("tv dekhte hai yr");
-// } else {
-//   console.log("kambhal oodo so jawo");
-// }
+var temperature = 150;
+if (temperature >= 300) {
+  console.log("lets go to beach");
+} else if (temperature >= 20 && temperature < 30) { //21 se 29 
+  console.log("tv dekhte hai yr");
+}else if( temperature > 100 ){
+  console.log("uyguyguygu");
+}
+else {
+  console.log("kambhal oodo so jawo");
+}
 
 //* ===============================
 //* Interview Question

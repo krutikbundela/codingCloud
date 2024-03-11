@@ -173,20 +173,20 @@ var myFavNum = 15;
 
 //? Logical AND (&&): Returns true if both operands are true, otherwise, it returns false.
 // Example:
-// var x = 5;
-// var y = 10;
-// console.log(x > 0 && y < 0);
+var x = 10;
+var y = -200;
+// console.log(x > 0 && y < 0); //true && true == 1(true)
 
 //? Logical OR (||): Returns true if at least one of the operands is true, otherwise, it returns false.
 // Example:
-// var a = 15;
-// var b = 0;
+// var a =10;
+// var b = 10;
 // console.log(a > 10 || b > 10);
 
 //? Logical NOT (!):
 //? Returns true if the operand is false, and false if the operand is true.
 // Example:
-// var isOpen = false;
+// var isOpen = true;
 // console.log(!isOpen);
 
 //* ===================================
@@ -203,6 +203,20 @@ var myFavNum = 15;
 // // age == 18
 // console.log(age >= 18 && hadDrivingLicense);
 
+
+// if a person has age above 18 so Driving License Granted .
+
+// var age = 19;
+
+// var addharCard = false;
+
+// if (age > 18 || addharCard) {
+//   console.log("Driving License Granted");
+// } else {
+//   console.log("Driving License Not Granted");
+// }
+
+
 //! How would the result change if hasDriverLicense was set to false❓
 
 //* ===================================
@@ -212,6 +226,7 @@ var myFavNum = 15;
 
 //? Unary Plus (+): Converts its operand into a number. If the operand is not already a number, it attempts to convert it.
 // console.log(+3);
+// console.log(-3);
 // console.log(+"5");
 
 //? Unary Negation (-): Negates its operand, converting non-numbers into numbers and then negating them.
@@ -222,13 +237,13 @@ var myFavNum = 15;
 // var x = 5;
 // var y = --x;
 // console.log(y);
-// console.log(x);
+// console.log(--x);
 
 //? Postfix Increment (x++) and Postfix Decrement (x--): In postfix form, the value of the operand is first returned, and then it is incremented or decremented.
 // var x = 5;
-// var y = x++;
-// console.log(y);
-// console.log(x);
+// var y = ++x;
+// console.log(y); //6
+// console.log(x); // 6
 
 //todo The current value of x (which is 5) is assigned to y. After the assignment, the value of x is then incremented by 1.
 
@@ -240,15 +255,27 @@ var myFavNum = 15;
 
 // ! write a program to check if the candidates isEligibleForDrive or not? Age must be equal to or greater then 18.
 
-// var age = 19;
-// var result = age >= 18 ? "Yes" : "No";
-// console.log(result);
+var age = 19;
+
+var addharCard = false;
+
+age > 18 || addharCard
+  ? console.log("Driving License Granted")
+  : console.log("Driving License Not Granted");
+
+
+// if (age > 18 || addharCard) {
+//   console.log("Driving License Granted");
+// } else {
+//   console.log("Driving License Not Granted");
+// }
+
 
 //! Q: Let say you have a variable score representing a student's exam score. If the score is greater than or equal to 60, the student passes; otherwise, they fail. Use the conditional (ternary) operator to determine the result and store it in a variable called result. Log the result to the console❓
 
-// var score = 99;
-// var result = score >= 60 ? "Pass" : "Fail";
-// console.log(result);
+var score = 10;
+var result = score >= 60 ? "Pass" : "Fail";
+console.log(result);
 
 //* ===================================
 //*  Combined Interview Questions
