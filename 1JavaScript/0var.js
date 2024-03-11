@@ -47,3 +47,29 @@ var myAge123 = 25;
 
 // var my@Email = "john@example.com";
 //? Explanation: This is not a valid variable name. It includes the special character '@', which is not allowed in JavaScript variable names. Only letters, numbers, underscores, and dollar signs are allowed.
+
+
+// ES6
+
+// 3 types of Declaring Variables
+
+// 1. var
+// 2. let
+// 3. const 
+
+//? 1. var :
+
+
+
+let xyz  = 100
+
+ xyz  = 1000
+
+functionName();
+xyz = 1890
+console.log("Outside a funtion xyz:", xyz);
+
+function functionName(){
+    console.log("Inside a functionName ~ xyz:", xyz);
+
+}
