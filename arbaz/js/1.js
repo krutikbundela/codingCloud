@@ -1,3 +1,6 @@
-var arbaz = 10;
-console.log("arbaz:", arbaz);
+var aa = 10;
+console.log("arbaz:", aa);
+
+var bggb = 89;
+
 
