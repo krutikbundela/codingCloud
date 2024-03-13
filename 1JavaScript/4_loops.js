@@ -24,17 +24,17 @@
 // }
 
 //? We can also use an else if clause to check additional conditions:
-var temperature = 150;
-if (temperature >= 300) {
-  console.log("lets go to beach");
-} else if (temperature >= 20 && temperature < 30) { //21 se 29 
-  console.log("tv dekhte hai yr");
-}else if( temperature > 100 ){
-  console.log("uyguyguygu");
-}
-else {
-  console.log("kambhal oodo so jawo");
-}
+// var temperature = 150;
+// if (temperature >= 300) {
+//   console.log("lets go to beach");
+// } else if (temperature >= 20 && temperature < 30) {
+//   console.log("tv dekhte hai yr");
+// }else if( temperature > 100 ){
+//   console.log("uyguyguygu");
+// }
+// else {
+//   console.log("kambhal oodo so jawo");
+// }
 
 //* ===============================
 //* Interview Question
@@ -71,43 +71,43 @@ else {
 //* Interview Questions
 //* ===============================
 //! 1: Write a program to check if a number is even or odd.
-var num = "7";
-if (num % 2 === 0) {
-  console.log("Num is even");
-} else {
-  console.log("Num is odd");
-}
+// var num = "7";
+// if (num % 2 === 0) {
+//   console.log("Num is even");
+// } else {
+//   console.log("Num is odd");
+// }
 
 //! 2: Write a program to check if a number is prime.
 //todo Prime numbers are numbers that have only 2 factors: 1 and themselves.
 //? All prime numbers greater than 2 are odd.
 //? However, not all odd numbers are prime.
 
-var num = 13;
-var isPrime = true;
+// var num = 13;
+// var isPrime = true;
 
-for (var i = 2; i < num; i++) {
-  if (num % i === 0) {
-    isPrime = false;
-    break;
-  }
-}
+// for (var i = 2; i < num; i++) {
+//   if (num % i === 0) {
+//     isPrime = false;
+//     break;
+//   }
+// }
 
-if (isPrime) {
-  console.log("Num is prime");
-} else {
-  console.log("Num is not prime");
-}
+// if (isPrime) {
+//   console.log("Num is prime");
+// } else {
+//   console.log("Num is not prime");
+// }
 
 //! 3: Write a program to check if a number is positive, negative, or zero.
-var num = -10;
-if (num === 0) {
-  console.log("NUm is zero");
-} else if (num > 0) {
-  console.log("NUm is positive ");
-} else {
-  console.log("NUm is negative ");
-}
+// var num = -10;
+// if (num === 0) {
+//   console.log("NUm is zero");
+// } else if (num > 0) {
+//   console.log("NUm is positive ");
+// } else {
+//   console.log("NUm is negative ");
+// }
 
 //* ===============================
 //* Switch Statement
@@ -218,6 +218,7 @@ if (num === 0) {
 //   num++;
 // }
 
+
 //! practice 🧑‍💻
 //? let's create a table of 5
 // 5*1 = 5
@@ -225,7 +226,7 @@ if (num === 0) {
 // 5*2 = 10
 
 // var num = 1;
-// while (num <= 10) {
+// while (num <= 100) {
 //   console.log("5 * " + num + " = " + 5 * num);
 //   //   console.log(`5 * ${num} = ${5 * num}`);
 //   num++;
@@ -249,11 +250,11 @@ if (num === 0) {
 //   num++;
 // }
 
-// var num = 1;
-// do{
-//     console.log(num);
-//     num++;
-// }while (num <= 10)
+var num = 10;
+do{
+    console.log(num);
+    num++;
+}while (num <= 10)
 
 //? Common Use Cases:
 //? When you want to guarantee the execution of the loop body at least once.
@@ -290,9 +291,9 @@ if (num === 0) {
 //   num++;
 // } while (num <= 10);
 
-// for (var num = 1; num <= 10; num++) {
-//   console.log(num);
-// }
+for (var num = 1; num <= 10; num++) {
+  console.log(num);
+}
 
 //? Key Point:
 // The initialization, condition, and iteration expressions are optional. You can omit any or all of them, but you must include the semicolons.

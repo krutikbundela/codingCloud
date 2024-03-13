@@ -65,11 +65,11 @@ let xyz  = 100
 
  xyz  = 1000
 
-functionName();
+krutik();
 xyz = 1890
 console.log("Outside a funtion xyz:", xyz);
 
-function functionName(){
+function krutik(){
     console.log("Inside a functionName ~ xyz:", xyz);
 
 }

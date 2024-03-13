@@ -225,8 +225,8 @@ var y = -200;
 //? Unary operators in JavaScript are operators that work with only one operand. They perform various operations such as negation, incrementing, decrementing, type conversion, and more.
 
 //? Unary Plus (+): Converts its operand into a number. If the operand is not already a number, it attempts to convert it.
-// console.log(+3);
-// console.log(-3);
+// console.log(+3); //3
+// console.log(-3);  //-3
 // console.log(+"5");
 
 //? Unary Negation (-): Negates its operand, converting non-numbers into numbers and then negating them.
@@ -237,14 +237,13 @@ var y = -200;
 // var x = 5;
 // var y = --x;
 // console.log(y);
-// console.log(--x);
+// console.log(++x);
 
 //? Postfix Increment (x++) and Postfix Decrement (x--): In postfix form, the value of the operand is first returned, and then it is incremented or decremented.
 // var x = 5;
-// var y = ++x;
-// console.log(y); //6
-// console.log(x); // 6
-
+// var y = x++;
+// console.log(y); 
+// console.log(x); 
 //todo The current value of x (which is 5) is assigned to y. After the assignment, the value of x is then incremented by 1.
 
 //* ===================================

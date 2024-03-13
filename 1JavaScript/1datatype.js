@@ -89,7 +89,7 @@
 
 
 //? 3: What is the result of `typeof null` in JavaScript❓
-var badMemories = null;
+// var badMemories = null;
 // console.log(badMemories);
 // console.log(typeof badMemories);
 
@@ -98,19 +98,25 @@ var badMemories = null;
 //? 5: Convert a string to a number?
 // We just need to add the '+' sign before the string
 // Example:
-var myFavNum = "10";
+// var myFavNum = "10";
 // console.log(myFavNum);
-// console.log("myFavNum:", typeof myFavNum);
 // console.log(+myFavNum);
 // console.log(typeof +myFavNum);
 // console.log(typeof Number(myFavNum));
 // console.log( Number(myFavNum));
 
+
+// myFavNum = Number(myFavNum)
+
+
+// console.log(myFavNum);
+// console.log("myFavNum:", typeof myFavNum);
+
 //? 6: Convert a number to a string?
 // We just need to add an empty string after the number
 // Example:
 
-// var str = 5 + "10" ;
+var str = 5 + "10" ;
 // console.log(str);
 // console.log(typeof str);
 
