@@ -69,7 +69,7 @@ const sub = (a , b) => {
 //? This step defines the function and specifies what code should be executed when the function is called.
 
 // function greet() {
-//   console.log("Hello Guys, Welcome to Thapa Technical JS Course ");
+//   console.log("Hello , How Are You??");
 // }
 
 // greet();
