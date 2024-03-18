@@ -86,9 +86,9 @@ var myFavNum = 15;
 //* ====================================
 
 //! var result = 0.1 + 0.2 ❓ 🤔💭
-// var result = 0.1 + 0.2;
-// console.log(result);
-// console.log(result.toFixed(4));
+var result = 0.1 + 0.2;
+console.log(result);
+console.log(result.toFixed(2));
 // when working with floating-point numbers in JavaScript, consider using methods like toFixed() when precise decimal representation is necessary.
 
 // const result = 55 * "hello" ❓
@@ -119,15 +119,15 @@ var myFavNum = 15;
 //? Comparison operators in JavaScript are used to compare values and return a Boolean result (true or false).
 
 //? Equal (==): Checks if two values are equal, performing type coercion if necessary.
-// console.log(5 == "5");
+console.log("==",77 == "5");
 
 //? Strict Equal (===):
 // Checks if two values are equal without performing type coercion.
-// console.log(5 === '5');
+console.log(5 === "5");
 
 //? Not Equal (!=):
 // Checks if two values are not equal, performing type coercion if necessary.
-// console.log(5 != 50);
+console.log(5 != "50");
 
 //? Greater Than (>):
 // Checks if the value on the left is greater than the value on the right.
@@ -175,7 +175,7 @@ var myFavNum = 15;
 // Example:
 var x = 10;
 var y = -200;
-// console.log(x > 0 && y < 0); //true && true == 1(true)
+console.log((x > 0 && y > 0)); //true && true == 1(true)
 
 //? Logical OR (||): Returns true if at least one of the operands is true, otherwise, it returns false.
 // Example:
