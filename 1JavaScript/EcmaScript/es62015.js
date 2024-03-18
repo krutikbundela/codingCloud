@@ -158,6 +158,23 @@
 //     return result; // Optional
 //   };
 
+
+//   function krutik() {
+//       console.log("hello")
+//       return 6876
+//   }
+
+  const krutik = () => {
+      console.log("hello");
+      return 6876
+    }
+    
+    console.log("1. this will run before function")
+    var a =  krutik();
+    console.log("a:", a);
+    console.log("krutik ~ krutik:", krutik());
+console.log("2. this will run after function")
+
 // todo NOTES
 
 //?🚀 1: If the function body consists of a single expression, the braces {} and the return keyword can be omitted.
