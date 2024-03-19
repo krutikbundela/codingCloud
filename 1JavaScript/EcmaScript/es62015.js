@@ -13,8 +13,10 @@
 // console.log(Name);
 
 // let Name = "krutik";
-// Name = "ram";
-// console.log(Name);
+// let Name = "ram" //? cnnont re-declare 
+// console.log("before changing: ",Name);
+//  Name = "ram"
+// console.log("after changing: ", Name);
 
 //? const Keyword: The const keyword is used to declare variables with block scope, but once a value is assigned to a const variable, it cannot be reassigned. const variables are immutable.
 
@@ -79,12 +81,12 @@
 
 //? In ECMAScript 6 (ES6), template strings, also known as template literals, provide a convenient and flexible way to create strings in JavaScript. Template strings are enclosed in backticks (``) rather than single or double quotes.
 
-// let firstName = "ram";
-// let lastName = "krutik";
+// let firstName = `ram `;
+// let lastName = `krutik`;
 
 // // Using template string for string interpolation
-// let fullName = firstName + lastName;
-// let fullName = `${firstName} ${lastName}`;
+// let fullName = `Hello How are you , firstName + lastName`;
+// let fullName = `Hello, How Are You? ${firstName} ${lastName}`;
 // console.log(fullName);
 
 //? String Interpolation:  Template strings support string interpolation, allowing you to embed expressions directly within the string. Interpolated expressions are enclosed in ${}
@@ -107,8 +109,8 @@
 //? Expression Evaluation: Template expressions can include any valid JavaScript expression.
 
 //! Practice Time
-// console.log("5 * " + num + " = " + 5 * num);
 // let num = 5;
+// console.log("5 * " + num + " = " + 5 * num);
 // console.log(`5 * ${num} = ${5 * num}`);
 
 //? Advantages:
@@ -130,10 +132,10 @@
 
 //! Write a function to find sum of two numbers? What if during function call user only passed one argument?
 
-// function sum(a = 20, myCurClass = 10) {
+// function krutik1(a = 20, b = 10) {
 //   return a + b;
 // }
-// console.log(sum());
+// console.log(krutik1(50));
 
 //* ==========================================
 //*  FAT ARROW FUNCTION
@@ -148,7 +150,7 @@
 
 // sum(5, 5);
 
-// const sum = (a, b) => console.log(`The sum of ${a} and ${b} is ${a + b}.`);
+const sum1 = (a, b) => console.log(`The sum of ${a} and ${b} is ${a + b}.`);
 // sum(5, 5);
 
 //! How to convert the same in fat arrow function

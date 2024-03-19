@@ -20,7 +20,11 @@
 
 //? Using array literal
 // let fruits = ["apple", "orange", "banana"];
-// console.log(fruits);
+// console.log(fruits.length);
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+// console.log(fruits[2]);
+// console.log(fruits[3]);
 
 //? we can also create an empty array
 // let arr = [];
@@ -39,9 +43,10 @@
 //* =====================================
 //?👉  Modifying Elements: You can modify array elements by assigning new values to specific indices.
 
-// let fruits = ["apple", "orange", "banana"];
-// fruits[2] = "mango";
-// console.log(fruits);
+// let fruits = ["apple", "orange", "banana", "apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana",];
+let fruits = [798,987,7,987,987,978,798,798,79,879,797,97,979,]
+fruits[2] = "mango";
+console.log(fruits.length);
 
 //* =============================================
 //*  Array Traversal / Iterating Over Arrays
@@ -80,8 +85,8 @@
 // ? 4: map function
 //* map() creates a new array from calling a function for every array element. map() does not change the original array.
 
-// const myMapArr = fruits.map((curElem, index, arr) => {
-//   return ` my fav fruit is ${curElem} `;
+// const myMapArr = fruits.map((fruit, index) => {
+//   return ` my fav fruit is at index=${index}  value=${fruit}`;
 //   //   console.log(arr);
 // });
 
