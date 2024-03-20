@@ -44,9 +44,9 @@
 //?👉  Modifying Elements: You can modify array elements by assigning new values to specific indices.
 
 // let fruits = ["apple", "orange", "banana", "apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana",];
-let fruits = [798,987,7,987,987,978,798,798,79,879,797,97,979,]
-fruits[2] = "mango";
-console.log(fruits.length);
+// let fruits = [798,987,7,987,987,978,798,798,79,879,797,97,979,]
+// fruits[2] = "mango";
+// console.log(fruits.length);
 
 //* =============================================
 //*  Array Traversal / Iterating Over Arrays
@@ -155,9 +155,9 @@ console.log(fruits.length);
 //? The splice() method of Array instances changes the contents of an array by removing or replacing existing elements and/or adding new elements in place
 
 //* syntax
-//? splice(start, deleteCount, item1, item2, /* …, */ itemN)
+//? splice(index, howManyDelete, item1, ....., itemX)
 // let fruits = ["apple", "orange", "banana", "mango"];
-// fruits.splice(1, 1, "grapes");
+// fruits.splice(2, 0 , "grapes", "eceee" , "huiyghiuyg");
 // console.log(fruits);
 
 // //! what if you want to add the element at the end
@@ -171,13 +171,13 @@ console.log(fruits.length);
 //?👉  Searching and Filter in an Array
 
 //? For Search we have - indexOf, lastIndexOf & includes
-// const numbers = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
+const numbers = [1, 2, 3, 4, 6, 5, 7, 8, 9];
 
 //?1: indexOf Method: The indexOf method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 // syntax
 // indexOf(searchElement);
 // indexOf(searchElement, fromIndex);
-// console.log(numbers.indexOf(4, 5));
+console.log(numbers.indexOf(9, 5));
 
 //? 2: lastIndexOf Method: The lastIndexOf() method of Array instances returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.
 // const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
@@ -368,7 +368,7 @@ const words = ["APPLE", "banana", "cherry", "date"];
 //! 2: Using the map method, write a function that takes an array of numbers and returns a new array where each number is squared, but only if it's an even number.
 
 // Original array of numbers
-const numbers = [1, 2, 3, 4, 5];
+// const numbers = [1, 2, 3, 4, 5];
 
 // const result = numbers
 //   .map((curElem) => {
