@@ -38,6 +38,20 @@
 // console.log(fruits[3]);
 // console.log(fruits["apple"]);
 
+//? EcmaScript 2022 .at() : it helps toindex from lastelements
+
+                // 0 ,       1,       2 ,      3 
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// .at() ===      -4        -3        -2        -1
+
+
+// console.log(fruits.at(-4)); //banana
+// console.log(fruits.at(-1));
+// console.log(fruits.at(-2));
+// console.log(fruits.at(1));
+// console.log(fruits.at(2));
+// console.log(fruits.at(3));
+
 //* ======================================
 //*  Modifying Elements:
 //* =====================================
@@ -58,10 +72,12 @@
 //? 1: for of loop , also known as iterable
 //* for...of Loop: The for...of loop is used to iterate over the values of an iterable object, such as arrays, strings, or other iterable objects.
 
+// for...of  loop:
 // for (let item of fruits) {
 //   console.log(item);
 // }
 
+// Simple for loop:
 // for (let item = 0; item < fruits.length; item++) {
 //   console.log(fruits[item]);
 // }
@@ -76,9 +92,10 @@
 // ? 3: forEach Method
 //* The arr.forEach() method calls the provided function once for each element of the array. The provided function may perform any kind of operation on the elements of the given array.
 
-// const myForEachArr = fruits.forEach((curElem, index, arr) => {
-//   return `${curElem} ${index}`;
-//   //   console.log(arr);
+// const myForEachArr =  fruits.forEach((fruit, index, arr) => {
+//   // console.log(` my fav fruit is at index=${index}  value=${fruit}`);
+//   return `${fruit}`
+//     console.log(arr);
 // });
 // console.log(myForEachArr);
 
@@ -171,21 +188,31 @@
 //?👉  Searching and Filter in an Array
 
 //? For Search we have - indexOf, lastIndexOf & includes
-const numbers = [1, 2, 3, 4, 6, 5, 7, 8, 9];
+// const numbers = [
+//   "apple",
+//   "orange",
+//   "banana",
+//   "mango",
+//   "grapes",
+//   "lichi",
+//   "banana",
+//   "watermellon",
+// ];
 
 //?1: indexOf Method: The indexOf method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 // syntax
 // indexOf(searchElement);
 // indexOf(searchElement, fromIndex);
-console.log(numbers.indexOf(9, 5));
+// console.log(numbers.indexOf()); // returns -1 
+// console.log(numbers.indexOf("banana" , 3)); 
 
 //? 2: lastIndexOf Method: The lastIndexOf() method of Array instances returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.
 // const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
-// const result = numbers.indexOf(6);
-// console.log(result);
-// const result1 = numbers.lastIndexOf(6);
+// const result1 = numbers.indexOf(6);
 // console.log(result1);
-// const result = numbers.indexOf(6, 5);
+// const result2 = numbers.lastIndexOf(6);
+// console.log(result2);
+// const result3 = numbers.indexOf(6, 5);
 // console.log(result);
 
 //? 3: The includes method checks whether an array includes a certain element, returning true or false.
@@ -193,9 +220,9 @@ console.log(numbers.indexOf(9, 5));
 // includes(searchElement);
 // includes(searchElement, fromIndex);
 
-// const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
-// const result = numbers.includes(5);
-// console.log(result);
+const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
+const result = numbers.includes(2 , 
+console.log(result);4);
 
 //todo Challenge time
 //? 1: Add Dec at the end of an array?
