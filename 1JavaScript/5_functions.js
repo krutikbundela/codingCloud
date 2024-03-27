@@ -31,28 +31,31 @@
 // console.log(print());
 
 
-// function sum(afgfyt , bgyug){
-//   var  sum = afgfyt + bgyug;
+// function sum(a=10 , b=20){
+//   var  sum = a + b;
 //   console.log("sum ~ sum:", sum);
 //   return sum; 
 // }
 
-function mul(afgfyt , bgyug){
-  var  sum = afgfyt * bgyug;
-  console.log("sum ~ sum:", sum);
-  return sum; 
-}
+// function mul(afgfyt , bgyug){
+//   var  sum = afgfyt * bgyug;
+//   console.log("sum ~ sum:", sum);
+//   return sum; 
+// }
 
 
-const sub = (a , b) => {
-  var sum = a - b;
-  console.log("sum ~ sum:", sum);
-  return sum; 
-}
+// const sub = (a , b) => {
+//   var sum = a - b;
+//   console.log("sum ~ sum:", sum);
+//   return sum; 
+// }
 
+// var x = 100;
+// var y = 100;
 
-
-// console.log
+// var krutik = sum();
+// console.log(krutik);
+// console.log(sum(x,y));
 // console.log(mul(60,90));
 // (sum(90,90));
 
@@ -122,12 +125,12 @@ const sub = (a , b) => {
 //! Practice Time
 //? Let's say we want to greet students with one same line
 //! Write a JavaScript program that defines a function called greet to welcome individuals to the Thapa Technical JS Course. The function should take a name parameter and output the message "Hello [name], Welcome to Thapa Technical JS Course". Call the function twice, once with the argument "vinod" and once with the argument "ram".
-// function greet(name) {
-//   console.log("Hello " + name + ", How Are You?");
-// }
+function greet(name) {
+  console.log("Hello " + name + ", How Are You?");
+}
 
-// greet("ram");
-// greet("sita");
+greet("ram");
+greet("sita");
 
 //! 1. Write a function to find the sum of two numbers with parameters.
 // function sum(a, b) {
@@ -196,12 +199,12 @@ result(10, 15);
 //   // code to be executed
 // })();
 
-var result = (function (a, b) {
-  console.log(a + b);
-  return a + b;
-})(5, 10);
+// var result = (function (a, b) {
+//   console.log(a + b);
+//   return a + b;
+// })(5, 10);
 
-console.log("the sum of two number is " + result);
+// console.log("the sum of two number is " + result);
 
 // !Practice Time ( IIFE with Parameters)
 
