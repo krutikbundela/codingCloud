@@ -161,10 +161,15 @@ const sum1 = (a, b) => console.log(`The sum of ${a} and ${b} is ${a + b}.`);
 //   };
 
 
-//   function krutik() {
-//       console.log("hello")
-//       return 6876
-//   }
+  function krutik() {
+      console.log("hello")
+      return 6876
+}
+  
+
+const krutik11 = () => {
+console.log("hello")
+}
 
   const krutik = () => {
       console.log("hello");
