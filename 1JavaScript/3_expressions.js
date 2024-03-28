@@ -29,7 +29,7 @@
 //? Assignment operators in programming are symbols used to assign values to variables. They take the value on the right side of the operator and assign it to the variable on the left side.
 
 // examples
-var myFavNum = 15;
+// var myFavNum = 15;
 // Assigns the value 15 to the variable myFavNum
 
 //* ===================================
@@ -86,9 +86,9 @@ var myFavNum = 15;
 //* ====================================
 
 //! var result = 0.1 + 0.2 ❓ 🤔💭
-var result = 0.1 + 0.2;
-console.log(result);
-console.log(result.toFixed(2));
+// var result = 0.1 + 0.2;
+// console.log(result);
+// console.log(result.toFixed(2));
 // when working with floating-point numbers in JavaScript, consider using methods like toFixed() when precise decimal representation is necessary.
 
 // const result = 55 * "hello" ❓
@@ -119,15 +119,15 @@ console.log(result.toFixed(2));
 //? Comparison operators in JavaScript are used to compare values and return a Boolean result (true or false).
 
 //? Equal (==): Checks if two values are equal, performing type coercion if necessary.
-console.log("==",77 == "5");
+// console.log("==",77 == "5");
 
 //? Strict Equal (===):
 // Checks if two values are equal without performing type coercion.
-console.log(5 === "5");
+// console.log(5 === "5");
 
 //? Not Equal (!=):
 // Checks if two values are not equal, performing type coercion if necessary.
-console.log(5 != "50");
+// console.log(5 != "50");
 
 //? Greater Than (>):
 // Checks if the value on the left is greater than the value on the right.
@@ -173,9 +173,9 @@ console.log(5 != "50");
 
 //? Logical AND (&&): Returns true if both operands are true, otherwise, it returns false.
 // Example:
-var x = 10;
-var y = -200;
-console.log((x > 0 && y > 0)); //true && true == 1(true)
+// var x = 10;
+// var y = -200;
+// console.log((x > 0 && y > 0)); //true && true == 1(true)
 
 //? Logical OR (||): Returns true if at least one of the operands is true, otherwise, it returns false.
 // Example:
@@ -254,13 +254,13 @@ console.log((x > 0 && y > 0)); //true && true == 1(true)
 
 // ! write a program to check if the candidates isEligibleForDrive or not? Age must be equal to or greater then 18.
 
-var age = 19;
+// var age = 19;
 
-var addharCard = false;
+// var addharCard = false;
 
-age > 18 || addharCard
-  ? console.log("Driving License Granted")
-  : console.log("Driving License Not Granted");
+// age > 18 || addharCard
+//   ? console.log("Driving License Granted")
+//   : console.log("Driving License Not Granted");
 
 
 // if (age > 18 || addharCard) {
@@ -272,9 +272,9 @@ age > 18 || addharCard
 
 //! Q: Let say you have a variable score representing a student's exam score. If the score is greater than or equal to 60, the student passes; otherwise, they fail. Use the conditional (ternary) operator to determine the result and store it in a variable called result. Log the result to the console❓
 
-var score = 10;
-var result = score >= 60 ? "Pass" : "Fail";
-console.log(result);
+// var score = 10;
+// var result = score >= 60 ? "Pass" : "Fail";
+// console.log(result);
 
 //* ===================================
 //*  Combined Interview Questions
