@@ -104,6 +104,7 @@
 // console.log(typeof +myFavNum);
 // console.log(typeof Number(myFavNum));
 // console.log( Number(myFavNum));
+// console.log(myFavNum);
 
 
 // myFavNum = Number(myFavNum)
@@ -116,7 +117,7 @@
 // We just need to add an empty string after the number
 // Example:
 
-var str = 5 + "10" ;
+// var str = 5 + " 10" ;
 // console.log(str);
 // console.log(typeof str);
 
@@ -155,6 +156,7 @@ var str = 5 + "10" ;
 
 //* parseInt: Definition: parseInt is used to parse a string and convert it to an integer (whole number).
 // const myString = "8798798.65464946846";
+// const myString = "hbjbhjb";
 // const myString2 = false;
 // const myNumber = parseInt(myString);
 // const myNumber2 = parseInt(myString2);
@@ -168,7 +170,7 @@ var str = 5 + "10" ;
 // console.log(myNumber); // Output: 42
 
 //* parseFloat: Definition: parseFloat is used to parse a string and convert it to a floating-point number (decimal number).
-const myString = "42.544974";
+const myString = 42.779798;
 const myNumber = parseFloat(myString);
 console.log(myNumber); 
 

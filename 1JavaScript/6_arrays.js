@@ -20,7 +20,11 @@
 
 //? Using array literal
 // let fruits = ["apple", "orange", "banana"];
-// console.log(fruits);
+// console.log(fruits.length);
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+// console.log(fruits[2]);
+// console.log(fruits[3]);
 
 //? we can also create an empty array
 // let arr = [];
@@ -34,14 +38,29 @@
 // console.log(fruits[3]);
 // console.log(fruits["apple"]);
 
+//? EcmaScript 2022 .at() : it helps toindex from lastelements
+
+                // 0 ,       1,       2 ,      3 
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// .at() ===      -4        -3        -2        -1
+
+
+// console.log(fruits.at(-4)); //banana
+// console.log(fruits.at(-1));
+// console.log(fruits.at(-2));
+// console.log(fruits.at(1));
+// console.log(fruits.at(2));
+// console.log(fruits.at(3));
+
 //* ======================================
 //*  Modifying Elements:
 //* =====================================
 //?👉  Modifying Elements: You can modify array elements by assigning new values to specific indices.
 
-// let fruits = ["apple", "orange", "banana"];
+// let fruits = ["apple", "orange", "banana", "apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana",];
+// let fruits = [798,987,7,987,987,978,798,798,79,879,797,97,979,]
 // fruits[2] = "mango";
-// console.log(fruits);
+// console.log(fruits.length);
 
 //* =============================================
 //*  Array Traversal / Iterating Over Arrays
@@ -53,10 +72,12 @@
 //? 1: for of loop , also known as iterable
 //* for...of Loop: The for...of loop is used to iterate over the values of an iterable object, such as arrays, strings, or other iterable objects.
 
+// for...of  loop:
 // for (let item of fruits) {
 //   console.log(item);
 // }
 
+// Simple for loop:
 // for (let item = 0; item < fruits.length; item++) {
 //   console.log(fruits[item]);
 // }
@@ -71,17 +92,18 @@
 // ? 3: forEach Method
 //* The arr.forEach() method calls the provided function once for each element of the array. The provided function may perform any kind of operation on the elements of the given array.
 
-// const myForEachArr = fruits.forEach((curElem, index, arr) => {
-//   return `${curElem} ${index}`;
-//   //   console.log(arr);
+// const myForEachArr =  fruits.forEach((fruit, index, arr) => {
+//   // console.log(` my fav fruit is at index=${index}  value=${fruit}`);
+//   return `${fruit}`
+//     console.log(arr);
 // });
 // console.log(myForEachArr);
 
 // ? 4: map function
 //* map() creates a new array from calling a function for every array element. map() does not change the original array.
 
-// const myMapArr = fruits.map((curElem, index, arr) => {
-//   return ` my fav fruit is ${curElem} `;
+// const myMapArr = fruits.map((fruit, index) => {
+//   return ` my fav fruit is at index=${index}  value=${fruit}`;
 //   //   console.log(arr);
 // });
 
@@ -150,9 +172,9 @@
 //? The splice() method of Array instances changes the contents of an array by removing or replacing existing elements and/or adding new elements in place
 
 //* syntax
-//? splice(start, deleteCount, item1, item2, /* …, */ itemN)
+//? splice(index, howManyDelete, item1, ....., itemX)
 // let fruits = ["apple", "orange", "banana", "mango"];
-// fruits.splice(1, 1, "grapes");
+// fruits.splice(2, 0 , "grapes", "eceee" , "huiyghiuyg");
 // console.log(fruits);
 
 // //! what if you want to add the element at the end
@@ -166,21 +188,31 @@
 //?👉  Searching and Filter in an Array
 
 //? For Search we have - indexOf, lastIndexOf & includes
-// const numbers = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
+// const numbers = [
+//   "apple",
+//   "orange",
+//   "banana",
+//   "mango",
+//   "grapes",
+//   "lichi",
+//   "banana",
+//   "watermellon",
+// ];
 
 //?1: indexOf Method: The indexOf method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 // syntax
 // indexOf(searchElement);
 // indexOf(searchElement, fromIndex);
-// console.log(numbers.indexOf(4, 5));
+// console.log(numbers.indexOf()); // returns -1 
+// console.log(numbers.indexOf("banana" , 3)); 
 
 //? 2: lastIndexOf Method: The lastIndexOf() method of Array instances returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.
 // const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
-// const result = numbers.indexOf(6);
-// console.log(result);
-// const result1 = numbers.lastIndexOf(6);
+// const result1 = numbers.indexOf(6);
 // console.log(result1);
-// const result = numbers.indexOf(6, 5);
+// const result2 = numbers.lastIndexOf(6);
+// console.log(result2);
+// const result3 = numbers.indexOf(6, 5);
 // console.log(result);
 
 //? 3: The includes method checks whether an array includes a certain element, returning true or false.
@@ -188,9 +220,9 @@
 // includes(searchElement);
 // includes(searchElement, fromIndex);
 
-// const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
-// const result = numbers.includes(5);
-// console.log(result);
+const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
+const result = numbers.includes(2, 4);
+console.log(result);
 
 //todo Challenge time
 //? 1: Add Dec at the end of an array?
@@ -363,7 +395,7 @@ const words = ["APPLE", "banana", "cherry", "date"];
 //! 2: Using the map method, write a function that takes an array of numbers and returns a new array where each number is squared, but only if it's an even number.
 
 // Original array of numbers
-const numbers = [1, 2, 3, 4, 5];
+// const numbers = [1, 2, 3, 4, 5];
 
 // const result = numbers
 //   .map((curElem) => {

@@ -5,8 +5,7 @@
 
 //  3 students at a same time wants to find the sum of two numbers
 // 1st student
-// var a = 5,
-//   b = 10;
+// var a = 5,  b = 10;
 // var sum1 = a + b;
 // console.log(sum1);
 
@@ -24,13 +23,46 @@
 
 // lets make a reusable code
 
-// function sum(a, b) {
-//   return a + b;
+// function print() {
+//   return "krutik";
 // }
 
-// console.log(sum(5, 5));
-// console.log(sum(15, 50));
-// console.log(sum(25, 750));
+
+// console.log(print());
+
+
+// function sum(a=10 , b=20){
+//   var  sum = a + b;
+//   console.log("sum ~ sum:", sum);
+//   return sum; 
+// }
+
+// function mul(afgfyt , bgyug){
+//   var  sum = afgfyt * bgyug;
+//   console.log("sum ~ sum:", sum);
+//   return sum; 
+// }
+
+
+// const sub = (a , b) => {
+//   var sum = a - b;
+//   console.log("sum ~ sum:", sum);
+//   return sum; 
+// }
+
+// var x = 100;
+// var y = 100;
+
+// var krutik = sum();
+// console.log(krutik);
+// console.log(sum(x,y));
+// console.log(mul(60,90));
+// (sum(90,90));
+
+
+//  var abc = sum(12, 890);
+//  console.log("abc:", abc);
+
 
 //* ===============================
 //* Function Declaration:
@@ -40,8 +72,10 @@
 //? This step defines the function and specifies what code should be executed when the function is called.
 
 // function greet() {
-//   console.log("Hello Guys, Welcome to Thapa Technical JS Course ");
+//   console.log("Hello , How Are You??");
 // }
+
+// greet();
 
 //* =================================================
 //* Function Invocation (Calling a Function):
@@ -91,12 +125,12 @@
 //! Practice Time
 //? Let's say we want to greet students with one same line
 //! Write a JavaScript program that defines a function called greet to welcome individuals to the Thapa Technical JS Course. The function should take a name parameter and output the message "Hello [name], Welcome to Thapa Technical JS Course". Call the function twice, once with the argument "vinod" and once with the argument "ram".
-// function greet(name) {
-//   console.log("Hello " + name + ", Welcome to Thapa Technical JS Course");
-// }
+function greet(name) {
+  console.log("Hello " + name + ", How Are You?");
+}
 
-// greet("ram");
-// greet("sita");
+greet("ram");
+greet("sita");
 
 //! 1. Write a function to find the sum of two numbers with parameters.
 // function sum(a, b) {
@@ -111,22 +145,24 @@
 //* ==============================
 //? A function expression is a way to define a function as part of an expression. It can be either named or anonymous. If it's named, it becomes a named function expression.
 
-// var result = function sum(a, b) {
-//   console.log(a + b);
-// };
+var result = function sum(a, b) {
+  console.log(a + b);
+};
 
-// result(10, 15);
+result(100 , 890);
+result(123 , 123)
+
 
 //* ==============================
 //*  Anonymous Function
 //* =============================
 //? An anonymous function is a function without a name. It can be created using either a function expression or a function declaration without a specified name.
 
-// var result = function (a, b) {
-//   console.log(a + b);
-// };
+var result = function (a, b) {
+  console.log(a + b);
+};
 
-// result(10, 15);
+result(10, 15);
 
 //* ==============================
 //*  Return Keyword
@@ -181,36 +217,36 @@
 // console.log(calculator(8, 4, '-')); // Output: 4
 // console.log(calculator(10, 2, '/')); // Output: 5
 
-// const calculator = (num1, num2, operator) => {
-//   let result;
-//   switch (operator) {
-//     case "+":
-//       return num1 + num2;
+const calculator = (num1, num2, operator) => {
+  let result;
+  switch (operator) {
+    case "+":
+      return num1 + num2;
 
-//     case "-":
-//       result = num1 - num2;
-//       return result;
+    case "-":
+      result = num1 - num2;
+      return result;
 
-//     case "*":
-//       result = num1 * num2;
-//       return result;
+    case "*":
+      result = num1 * num2;
+      return result;
 
-//     case "/":
-//       if (num2 === 0) {
-//         return "0 is not allowed";
-//       } else {
-//         result = num1 / num2;
-//         return result;
-//       }
+    case "/":
+      if (num2 === 0) {
+        return "0 is not allowed";
+      } else {
+        result = num1 / num2;
+        return result;
+      }
 
-//     default:
-//       return "no operator found";
-//   }
-// };
+    default:
+      return "no operator found";
+  }
+};
 
-// console.log(calculator(5, 2, "+")); // Output: 7
-// console.log(calculator(8, 4, "-")); // Output: 4
-// console.log(calculator(10, 0, "/")); // Output: 5
+console.log(calculator(5, 2, "+")); // Output: 7
+console.log(calculator(8, 4, "-")); // Output: 4
+console.log(calculator(10, 0, "/")); // Output: 5
 
 //! Reverse a String:
 //! Write a function to reverse a given string without using built-in reverse methods.
@@ -223,7 +259,7 @@ const isReverse = (str) => {
   return reverse;
 };
 
-console.log(isReverse("vinod thapa"));
+// console.log(isReverse("krutik"));
 
 //! Palindrome Check:
 //! Create a function to determine if a given string is a palindrome (reads the same backward as forward).
