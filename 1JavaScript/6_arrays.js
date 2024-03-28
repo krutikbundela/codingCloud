@@ -221,8 +221,8 @@
 // includes(searchElement, fromIndex);
 
 const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
-const result = numbers.includes(2 , 
-console.log(result);4);
+const result = numbers.includes(2, 4);
+console.log(result);
 
 //todo Challenge time
 //? 1: Add Dec at the end of an array?

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      form {
+        margin-top: 100px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 800px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      textarea {
+        width: 100%;
+        padding: 8px;
+
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="checkbox"],
+      input[type="radio"] {
+        margin-right: 5px;
+      }
+
+      textarea {
+        height: 80px;
+        resize: vertical;
+      }
+
+      input[type="file"] {
+        margin-bottom: 10px;
+      }
+
+      .preview {
+        display: none;
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: #fff;
+      }
+
+      input[type="submit"]:hover,
+      input[type="reset"]:hover {
+        background-color: #0056b3;
+      }
+
+      h2 {
+        color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      id="myForm"
+      action="data.html"
+      method="get"
+      enctype="multipart/form-data"
+    >
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <label>Hobby:</label>
+      <input type="checkbox" id="hobby1" name="hobby" value="Reading" />
+      <label for="hobby1">Reading</label>
+      <input type="checkbox" id="hobby2" name="hobby" value="Cooking" />
+      <label for="hobby2">Cooking</label>
+      <input type="checkbox" id="hobby3" name="hobby" value="Gardening" />
+      <label for="hobby3">Gardening</label>
+
+      <label>Mother Tongue:</label>
+      <div>
+        <input type="radio" id="hindi" name="motherTongue" value="Hindi" />
+        <label for="hindi">Hindi</label>
+        <input type="radio" id="english" name="motherTongue" value="English" />
+        <label for="english">English</label>
+        <input
+          type="radio"
+          id="gujarati"
+          name="motherTongue"
+          value="Gujarati"
+        />
+        <label for="gujarati">Gujarati</label>
+      </div>
+      <br />
+      <br />
+      <label>fav fruit:</label>
+      <div>
+        <input type="radio" id="apple" name="fruit" value="Apple" />
+        <label for="apple">Apple</label>
+        <input type="radio" id="orange" name="fruit" value="Orange" />
+        <label for="orange">Orange</label>
+        <input type="radio" id="mango" name="fruit" value="Mango" />
+        <label for="mango">Mango</label>
+      </div>
+
+      <label for="address">Address:</label>
+      <textarea
+        id="address"
+        name="address"
+        rows="4"
+        cols="50"
+        required
+      ></textarea>
+
+      <label for="image">Image:</label>
+      <input
+        type="file"
+        id="image"
+        name="image"
+        accept="image/*"
+        onchange="previewImage(event)"
+      />
+
+      <div class="preview" id="imagePreview"></div>
+
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script>
+      function previewImage(event) {
+        const preview = document.getElementById("imagePreview");
+        const file = event.target.files[0];
+        const reader = new FileReader();
+
+        reader.onload = function (event) {
+          preview.innerHTML = `<img src="${event.target.result}" alt="Preview">`;
+          preview.style.display = "block";
+        };
+
+        reader.readAsDataURL(file);
+      }
+    </script>
+  </body>
+</html>
