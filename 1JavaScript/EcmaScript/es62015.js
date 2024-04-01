@@ -23,16 +23,16 @@
 // pi=3.142 * r * r
 
 // const Name = "krutik";
-// // Name = "ram";
+// Name = "ram";
 // console.log(Name);
 
 // //? 1st show what var can do
-// var name = "krutik";
+var name = "krutik";
 
-// if (true) {
-//   var name = "ram";
-//   console.log(name);
-// }
+if (true) {
+  var name = "ram";
+  console.log(name);
+}
 
 // name = "technical";
 // console.log(name);
@@ -150,8 +150,8 @@
 
 // sum(5, 5);
 
-const sum1 = (a, b) => console.log(`The sum of ${a} and ${b} is ${a + b}.`);
-// sum(5, 5);
+// const sum1 = (a, b) => console.log(`The sum of ${a} and ${b} is ${a + b}.`);
+// // sum(5, 5);
 
 //! How to convert the same in fat arrow function
 // Syntax
@@ -161,37 +161,37 @@ const sum1 = (a, b) => console.log(`The sum of ${a} and ${b} is ${a + b}.`);
 //   };
 
 
-  function krutik() {
-      console.log("hello")
-      return 6876
-}
+//   function krutik() {
+//       console.log("hello")
+//       return 6876
+// }
   
 
-const krutik11 = () => {
-console.log("hello")
-}
+// const krutik11 = () => {
+// console.log("hello")
+// }
 
-  const krutik = () => {
-      console.log("hello");
-      return 6876
-    }
+//   const krutik = () => {
+//       console.log("hello");
+//       return 6876
+//     }
     
-    console.log("1. this will run before function")
-    var a =  krutik();
-    console.log("a:", a);
-    console.log("krutik ~ krutik:", krutik());
-console.log("2. this will run after function")
+//     console.log("1. this will run before function")
+//     var a =  krutik();
+//     console.log("a:", a);
+//     console.log("krutik ~ krutik:", krutik());
+// console.log("2. this will run after function")
 
 // todo NOTES
 
 //?🚀 1: If the function body consists of a single expression, the braces {} and the return keyword can be omitted.
-const sum = (a, b) => `The sum of ${a} and ${b} is ${a + b}`;
-console.log(sum(5, 5));
+// const sum = (a, b) => `The sum of ${a} and ${b} is ${a + b}`;
+// console.log(sum(5, 5));
 
 //? 🚀 2: If there is only one parameter, the parentheses () around the parameter list can be omitted.
-const square = (a) => `The square of ${a} is  ${a * a}`;
-console.log(square(5));
+// const square = (a) => `The square of ${a} is  ${a * a}`;
+// console.log(square(5));
 
 //? 🚀 3: If there are no parameters, use an empty set of parentheses ().
-const greet = () => console.log("Plz LIKE SHARE & SUBSCRIBE!");
-greet();
+// const greet = () => console.log("Plz LIKE SHARE & SUBSCRIBE!");
+// greet();

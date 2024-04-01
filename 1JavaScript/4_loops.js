@@ -16,20 +16,20 @@
 // }
 
 //? Let check the temperature
-// var temperature = 25;
-// if (temperature > 30) {
-//   console.log("lets go to beach");
-// } else {
-//   console.log("tv dekhte hai yr");
-// }
+var temperature = 25;
+if (temperature > 30) {
+  console.log("lets go to beach");
+} else {
+  console.log("tv dekhte hai yr");
+}
 
 //? We can also use an else if clause to check additional conditions:
 // var temperature = 150;
-// if (temperature >= 300) {
+// if (temperature >= 300) { //300,301....
 //   console.log("lets go to beach");
-// } else if (temperature >= 20 && temperature < 30) {
+// } else if (temperature >= 20 && temperature < 30) { //20 to 29
 //   console.log("tv dekhte hai yr");
-// }else if( temperature > 100 ){
+// }else if( temperature > 100 ){//0 to 99
 //   console.log("uyguyguygu");
 // }
 // else {
@@ -49,9 +49,9 @@
 
 // Assume the user's age, citizenship status, and registration status as inputs
 // let userAge = 19;
-// let isCitizen = true; // Assume true for citizen, false for non-citizen
+// let isCitizen = false; // Assume true for citizen, false for non-citizen
 // let isRegistered = true; // Assume false for not registered, true for registered
-// //! Check eligibility using if...else statements with multiple conditions
+// // //! Check eligibility using if...else statements with multiple conditions
 
 // if (userAge >= 18) {
 //   if (isCitizen) {
@@ -65,6 +65,11 @@
 //   }
 // } else {
 //   console.log("You are not eligible to vote (Younger)");
+// }
+
+
+// if(userAge >= 18 && isCitizen  && isRegistered ){
+//   console.log("can vote");
 // }
 
 //* ===============================
@@ -133,8 +138,9 @@
 //todo let's see the example
 //! Explain how the switch statement works and what will be the output when the variable day is set to different values.
 
-var day = "Friday";
-
+var day = "Monday";
+//  var day2 = "friday";
+//  var day2 = "FRIDAY";
 switch (day) {
   case "Monday":
     console.log("today is monday");
@@ -143,11 +149,20 @@ switch (day) {
   case "Friday":
     console.log("omg lets have party today");
     break;
+  case "Friday":
+    console.log("omg lets have party today");
+    break;
 
   case "Sunday":
     console.log("Lets go to movie");
     break;
+  case "Sunday":
+    console.log("Lets go to movie");
+    break;
 
+  default:
+    console.log("no condition match");
+}
   default:
     console.log("no condition match");
 }
@@ -332,9 +347,9 @@ switch (areaOfShapes) {
 //   num++;
 // }
 
-// for (var num = 1; num <= 10; num++) {
-//   console.log("5 * " + num + " = " + 5 * num);
-// }
+for (var num = 1; num <= 100; num++) {
+  console.log("5 * " + num + " = " + 5 * num);
+}
 
 //! Homework ➡️ JavaScript program to print table for given number (8,9,12,15) using for Loop?
 
