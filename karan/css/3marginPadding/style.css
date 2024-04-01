@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* body {
+  margin: 0;
+  padding: 0;
+} */
+
+section {
+  height: 100vh;
+  margin: 20px 40px 60px 80px;
+  padding: 50px;
+}
+
+.sec_1_div_1 {
+  /* margin: 500px 100px; */
+  /* width: 100%; */
+}
+
+div {
+}
