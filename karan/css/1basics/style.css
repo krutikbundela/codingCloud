@@ -1,0 +1,17 @@
+h3 {
+  color: pink;
+  background-color: aquamarine;
+}
+
+.p-edit {
+  color: chartreuse;
+}
+
+#p-id {
+  color: rgb(255, 0, 0);
+}
+
+.p-bg-pink {
+  color: black;
+  background-color: pink;
+}

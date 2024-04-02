@@ -16,20 +16,20 @@
 // }
 
 //? Let check the temperature
-// var temperature = 25;
-// if (temperature > 30) {
-//   console.log("lets go to beach");
-// } else {
-//   console.log("tv dekhte hai yr");
-// }
+var temperature = 25;
+if (temperature > 30) {
+  console.log("lets go to beach");
+} else {
+  console.log("tv dekhte hai yr");
+}
 
 //? We can also use an else if clause to check additional conditions:
 // var temperature = 150;
-// if (temperature >= 300) {
+// if (temperature >= 300) { //300,301....
 //   console.log("lets go to beach");
-// } else if (temperature >= 20 && temperature < 30) {
+// } else if (temperature >= 20 && temperature < 30) { //20 to 29
 //   console.log("tv dekhte hai yr");
-// }else if( temperature > 100 ){
+// }else if( temperature > 100 ){//0 to 99
 //   console.log("uyguyguygu");
 // }
 // else {
@@ -49,9 +49,9 @@
 
 // Assume the user's age, citizenship status, and registration status as inputs
 // let userAge = 19;
-// let isCitizen = true; // Assume true for citizen, false for non-citizen
+// let isCitizen = false; // Assume true for citizen, false for non-citizen
 // let isRegistered = true; // Assume false for not registered, true for registered
-// //! Check eligibility using if...else statements with multiple conditions
+// // //! Check eligibility using if...else statements with multiple conditions
 
 // if (userAge >= 18) {
 //   if (isCitizen) {
@@ -65,6 +65,11 @@
 //   }
 // } else {
 //   console.log("You are not eligible to vote (Younger)");
+// }
+
+
+// if(userAge >= 18 && isCitizen  && isRegistered ){
+//   console.log("can vote");
 // }
 
 //* ===============================
@@ -133,24 +138,34 @@
 //todo let's see the example
 //! Explain how the switch statement works and what will be the output when the variable day is set to different values.
 
-// var day = "Friday";
+var day = "Monday";
+//  var day2 = "friday";
+//  var day2 = "FRIDAY";
+switch (day) {
+  case "Monday":
+    console.log("today is monday");
+    break;
 
-// switch (day) {
-//   case "Monday":
-//     console.log("today is monday");
-//     break;
+  case "Friday":
+    console.log("omg lets have party today");
+    break;
+  case "Friday":
+    console.log("omg lets have party today");
+    break;
 
-//   case "Friday":
-//     console.log("omg lets have party today");
-//     break;
+  case "Sunday":
+    console.log("Lets go to movie");
+    break;
+  case "Sunday":
+    console.log("Lets go to movie");
+    break;
 
-//   case "Sunday":
-//     console.log("Lets go to movie");
-//     break;
-
-//   default:
-//     console.log("no condition match");
-// }
+  default:
+    console.log("no condition match");
+}
+  default:
+    console.log("no condition match");
+}
 
 //?=========================
 // ? Challenge time
@@ -158,30 +173,30 @@
 
 //! Write a JavaScript switch statement that takes a variable areaOfShapes representing different shapes, and based on its value, calculates and logs the area of the corresponding shape. Consider three shapes: 'Rectangle,' 'Circle,' and 'Square.' For 'Rectangle,' use variables a and b as the sides; for 'Circle,' use a variable r as the radius; and for 'Square,' use variable a as the side length. If the provided shape is not recognized, log a message saying, 'Sorry the shape is not available.' Test your switch statement with areaOfShapes set to 'Square' and sides a and b set to 5 and 10, respectively. Ensure that the correct area (25 in this case) is logged to the console.
 
-// var areaOfShapes = "square";
-// var a = 5;
-// var b = 10;
-// var result;
-// switch (areaOfShapes) {
-//   case "square":
-//     result = a * a;
-//     console.log(result);
-//     break;
+var areaOfShapes = "rectangle";
+var a = 5;
+var b = 10;
+var result;
+switch (areaOfShapes) {
+  case "square":
+    result = a * a;
+    console.log(result);
+    break;
 
-//   case "rectangle":
-//     result = a * b;
-//     console.log(result);
-//     break;
+  case "rectangle":
+    result = a * b;
+    console.log(result);
+    break;
 
-//   case "circle":
-//     var r = 2;
-//     result = 3.142 * (r * r);
-//     console.log(result);
-//     break;
+  case "circle":
+    var r = 2;
+    result = 3.142 * (r * r);
+    console.log(result);
+    break;
 
-//   default:
-//     console.log("No shape matches");
-// }
+  default:
+    console.log("No shape matches");
+}
 
 //! Question: Explain the purpose of the code. What is it calculating based on the values of areaOfShapes, a, and b?
 //? The code calculates and logs the area of different shapes (rectangle, circle, square) based on the value of the areaOfShapes variable.
@@ -250,11 +265,11 @@
 //   num++;
 // }
 
-var num = 10;
-do{
-    console.log(num);
-    num++;
-}while (num <= 10)
+// var num = 10;
+// do{
+//     console.log(num);
+//     num++;
+// }while (num <= 10)
 
 //? Common Use Cases:
 //? When you want to guarantee the execution of the loop body at least once.
@@ -291,9 +306,11 @@ do{
 //   num++;
 // } while (num <= 10);
 
-for (var num = 1; num <= 10; num++) {
-  console.log(num);
-}
+
+// var krutik
+// for ( krutik = 1; krutik <= 100; krutik++) {
+//   console.log(krutik);
+// }
 
 //? Key Point:
 // The initialization, condition, and iteration expressions are optional. You can omit any or all of them, but you must include the semicolons.
@@ -330,9 +347,9 @@ for (var num = 1; num <= 10; num++) {
 //   num++;
 // }
 
-// for (var num = 1; num <= 10; num++) {
-//   console.log("5 * " + num + " = " + 5 * num);
-// }
+for (var num = 1; num <= 100; num++) {
+  console.log("5 * " + num + " = " + 5 * num);
+}
 
 //! Homework ➡️ JavaScript program to print table for given number (8,9,12,15) using for Loop?
 
