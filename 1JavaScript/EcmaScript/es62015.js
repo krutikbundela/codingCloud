@@ -8,8 +8,8 @@
 
 //? let Keyword:  The let keyword is used to declare variables with block scope. Variables declared with let are mutable, meaning their values can be reassigned.
 
-// var Name = "krutik";
-// Name = "ram";
+// var Name1 = "krutik";
+// var Name1 = "ram";
 // console.log(Name);
 
 // let Name = "krutik";
@@ -20,10 +20,9 @@
 
 //? const Keyword: The const keyword is used to declare variables with block scope, but once a value is assigned to a const variable, it cannot be reassigned. const variables are immutable.
 
-// pi=3.142 * r * r
-
+// const pi=3.142
 // const Name = "krutik";
-// // Name = "ram";
+// Name = "ram";
 // console.log(Name);
 
 // //? 1st show what var can do
@@ -81,13 +80,14 @@
 
 //? In ECMAScript 6 (ES6), template strings, also known as template literals, provide a convenient and flexible way to create strings in JavaScript. Template strings are enclosed in backticks (``) rather than single or double quotes.
 
-// let firstName = `ram `;
-// let lastName = `krutik`;
+let firstName = `ram `;
+let lastName = `krutik`;
 
-// // Using template string for string interpolation
-// let fullName = `Hello How are you , firstName + lastName`;
-// let fullName = `Hello, How Are You? ${firstName} ${lastName}`;
-// console.log(fullName);
+  // // Using template string for string interpolation
+  // let fullName1 = "Hello How are you "+ lastName +" , firstName + lastName" +firstName + lastName;
+let fullName2 = `Hello, How Are You? ${firstName} ${40+50} ${lastName}`;
+console.log(fullName2);
+// console.log("Hello How are you ,  ",firstName ,lastName);
 
 //? String Interpolation:  Template strings support string interpolation, allowing you to embed expressions directly within the string. Interpolated expressions are enclosed in ${}
 
@@ -98,20 +98,23 @@
 // console.log(message);
 
 // Multi-line Strings: Template strings make it easy to create multi-line strings without the need for concatenation or escape characters.
-// let multiLineString = `
-//   This is a multi-line
-//   string using template literals.
-//   It's much cleaner and easier to read.
-// `;
+let multiLineString = `
+  This is a multi-line
+  string using template literals.
+  unkjnkj
 
-// console.log(multiLineString);
+  hiuhuihnui
+  It's much cleaner and easier to read.
+`;
+
+console.log(multiLineString);
 
 //? Expression Evaluation: Template expressions can include any valid JavaScript expression.
 
 //! Practice Time
-// let num = 5;
-// console.log("5 * " + num + " = " + 5 * num);
-// console.log(`5 * ${num} = ${5 * num}`);
+let num = 5;
+console.log("5 * " + num + " = " + 5 * num);
+console.log(`5 * ${num} = ${5 * num}`);
 
 //? Advantages:
 //? Readability: Template strings make the code more readable, especially for complex string constructions.
@@ -161,11 +164,11 @@ const sum1 = (a, b) => console.log(`The sum of ${a} and ${b} is ${a + b}.`);
 //   };
 
 
-  function krutik() {
+  function krutik2() {
       console.log("hello")
       return 6876
 }
-  
+
 
 const krutik11 = () => {
 console.log("hello")

@@ -197,3 +197,94 @@
 // 	console.log(space.repeat(n-i)+str.repeat(i));
 // }
 
+// var a = 5,  b = 10;
+// var sum1 = a + b;
+// console.log(sum1);
+
+// var a = 15,
+//   b = 15;
+// var sum2 = a + b;
+// console.log(sum2);
+
+// var a = 55,
+//   b = 15;
+// var sum3 = a + b;
+// console.log(sum3);
+
+// function greet(name) {
+//   console.log("Hello " + name + ", How Are You?");
+// }
+
+// greet("dear");
+// greet("arbaaz");
+
+// var result = function sum(a, b) {
+//   console.log(a + b);
+// };
+
+// result(100 , 499);
+// result(123 , 100)
+
+// var result = function (a, b) {
+//   console.log(a + b);
+// };
+
+// result(30, 15);
+
+// calculater
+
+const calculater = (num1,num2,operator) => {
+  let result;
+  switch (operator) {
+    case "+":
+      return num1 + num2;
+
+    case "-":
+      result = num1 - num2;
+      return result;
+
+    case "*":
+      result = num1 * num2;
+      return result;
+
+    case "/":
+      if (num2 === 0) {
+        return "0 is not allowed";
+      } else {
+        result = num1 / num2;
+        return result;
+      }
+
+    default:
+      return "no operator found";
+  }
+};
+
+console.log(calculator(5, 2, "+")); // Output: 7
+console.log(calculator(8, 4, "-")); // Output: 4
+console.log(calculator(10, 0, "/")); // Output: 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
