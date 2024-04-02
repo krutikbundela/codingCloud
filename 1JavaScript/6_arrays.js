@@ -19,12 +19,13 @@
 // let fruits = new Array('apple', 'orange', 'banana')
 
 //? Using array literal
-// let fruits = ["apple", "orange", "banana"];
+// let fruits = ["apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana",];
+// console.log(fruits);
 // console.log(fruits.length);
 // console.log(fruits[0]);
 // console.log(fruits[1]);
-// console.log(fruits[2]);
-// console.log(fruits[3]);
+// console.log(fruits[86]);
+// console.log(fruits[87]);
 
 //? we can also create an empty array
 // let arr = [];
@@ -78,8 +79,14 @@
 // }
 
 // Simple for loop:
-// for (let item = 0; item < fruits.length; item++) {
+// const a= fruits.length -1
+// for (let item = 0; item <= a; item++) {
 //   console.log(fruits[item]);
+// }
+// for (let item = 0; item <= a; item++) {
+//   if (fruits[item]=== "banana") {
+//     console.log(`yes i found mango on INDEX = ${item}`);
+//   }
 // }
 
 //? 2: for in loop
@@ -220,9 +227,9 @@
 // includes(searchElement);
 // includes(searchElement, fromIndex);
 
-const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
-const result = numbers.includes(2, 4);
-console.log(result);
+// const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
+// const result = numbers.includes(2 , 4);
+// console.log(result);
 
 //todo Challenge time
 //? 1: Add Dec at the end of an array?

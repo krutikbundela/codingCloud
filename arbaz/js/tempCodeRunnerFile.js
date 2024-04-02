@@ -1,2 +1,3 @@
-var arbaz = 10;
-console.log("arbaz:", arba);
+
+var sum3 = a + b;
+console.log(sum3);
