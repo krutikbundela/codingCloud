@@ -25,11 +25,12 @@
 // \'	    '	        Single quote
 // \"	    "	        Double quote
 // \\	    \	        Backslash
+// \n                 New Line
 
-// let text = "My name is " Thapa Technical " & I am a Full Stack Developer. ";
+// let text = "My name is \"krutik\" \\ & I am a Full Stack Developer. ";
 // let text =
-//   "My name is ' Thapa Technical ' & \\ I am a \"Full Stack \" Developer. ";
-// // let text = 'My name is " Thapa Technical " & I am a Full Stack Developer. ';
+//   "My name is ' Krutik ' & \\ I am a \"Full Stack \" Developer. ";
+// // let text = 'My name is " Krutik " & I am a Full Stack Developer. ';
 
 // console.log(text);
 
@@ -43,10 +44,10 @@
 // indexOf(searchString)
 // indexOf(searchString, position)
 
-// let text = "Vinod Thapa";
-// console.log(text.indexOf("thapa"));
+// let text = "Krutik Bundela";
+// console.log(text.indexOf("bundela"));
 // The indexOf() method is case sensitive.
-// console.log(text.indexOf("Thapa"));
+// console.log(text.indexOf("Bundela"));
 
 // let strArr = Array.from(text);
 // // console.log(strArr);
@@ -67,14 +68,19 @@
 //? c:  search(): The search() method searches a string for a string (or a regular expression) and returns the position of the match.
 //* Returns the index number where the first match is found. Returns -1 if no match is found.
 
-// let text = "Hello JavaScript, welcome to our world best JavaScript course";
-// let result = text.search(/Javascript/i);
+// let result = text.search(/kkk/i);
 // console.log(result);
 
 //*👉 Important Tips
 // The search() method cannot take a second start position argument.
 // The indexOf() method cannot take powerful search values (regular expressions).
 // They accept the same arguments (parameters), and return the same value
+
+// ? Regular Expression
+//* /abcd/ => find abcd
+//* /abcd/g  => globally
+//* /abcd/i => case sensitive
+// https://www.w3schools.com/jsref/jsref_obj_regexp.asp
 
 //? match() : Returns an array of the matched values or null if no match is found.
 
@@ -87,7 +93,7 @@
 // console.log(result);
 
 //? matchAll() : Returns an iterator of all matches, providing detailed information about each match. Returns an empty iterator if no match is found.
-// let text = "Hello JavaScript, welcome to our world best JavaScript course";
+// let text = "Hello JavaScript, welcome to our world best JavaScript JavaScript JavaScript JavaScript JavaScript course";
 // let matchResult = text.matchAll("javascript");
 // let matchResult = text.matchAll("JavaScript");
 //todo  here the js converts the normal text into regular expression text.match(/JavaScript/g); also adds the g flag at the end
@@ -117,7 +123,7 @@
 //? startsWith(): The startsWith() method returns true if a string begins with a specified value.Otherwise it returns false:
 // let text = "Hello JavaScript, welcome to our world best JavaScript course";
 // let result = text.startsWith("Helcome");
-// let result = text.startsWith("Hello");
+// let result = text.startsWith("JavaScript");
 // console.log(result);
 
 //* start position for the search can be specified
@@ -142,6 +148,8 @@
 //? a: slice() extracts a part of a string and returns the extracted part in a new string.
 // syntax
 // slice(start, end);
+// start => starting index
+//  end => ending index (Doesn't include end index in output)
 
 // Todo  JavaScript counts positions from zero.
 //? First position is 0. Second position is 1.
@@ -159,6 +167,8 @@
 // substring(indexStart) // index starts with 0
 // substring(indexStart, indexEnd)
 
+
+//? Difference Between substring & slice 
 //* substring() is similar to slice(). The difference is that start and end values less than 0 are treated as 0 in substring().
 
 // let text = "Hello JavaScript, welcome to our world best JavaScript course";
@@ -185,8 +195,8 @@
 // let result = text.replace("H", "");
 // let result = text.substring(1);
 //? Optional
-// let result = text.replace("JavaScript", "Vinod");
-// let result = text.replaceAll("JavaScript", "Vinod");
+// let result = text.replace("JavaScript", "Krutik");
+// let result = text.replaceAll("JavaScript", "Krutik");
 
 // console.log(result);
 
@@ -233,7 +243,7 @@
 
 //? Case-Insensitive Replacement: To perform a case-insensitive replacement, you can use the i flag in the regular expression.
 // let originalString = "Hello, World! How are you, World?";
-// let replacedString = originalString.replace(/world/gi, "vinod");
+// let replacedString = originalString.replace(/world/gi, "krutik");
 // console.log(replacedString);
 
 //* =========================================
@@ -286,7 +296,7 @@
 //   }
 //   return count;
 // };
-//   console.log(checkAllVowelPresentOrNot("my name u is vinod @  thapa"));
+//   console.log(checkAllVowelPresentOrNot("my name u is krutik @  bundela"));
 // console.log(countVowels("Hello a i o u world"));
 
 //! 3: Write a function to check if all the vowels presents in a string or not?
@@ -303,24 +313,24 @@
 //   return true;
 // };
 
-// console.log(checkAllVowelPresentOrNot("my name u is vinod @  thapa"));
+// console.log(checkAllVowelPresentOrNot("my name u is krutik @  bundela"));
 
 //! 4: Write a JavaScript function to check if the given sting is Pangram or not?
 
-const pangramChecker = (str) => {
-  let inputArr = str.toLowerCase().split("");
-  // console.log(inputArr);
-  // // console.log("z".charCodeAt());
-  const values = inputArr.filter(
-    (curElem) =>
-      curElem.charCodeAt() >= "a".charCodeAt() &&
-      curElem.charCodeAt() <= "z".charCodeAt()
-  );
-  // console.log(values);
+// const pangramChecker = (str) => {
+//   let inputArr = str.toLowerCase().split("");
+//   // console.log(inputArr);
+//   // // console.log("z".charCodeAt());
+//   const values = inputArr.filter(
+//     (curElem) =>
+//       curElem.charCodeAt() >= "a".charCodeAt() &&
+//       curElem.charCodeAt() <= "z".charCodeAt()
+//   );
+//   // console.log(values);
 
-  return new Set(values).size === 26;
+//   return new Set(values).size === 26;
 
-  // return [...new Set(values)].length === 26;
-};
+//   // return [...new Set(values)].length === 26;
+// };
 
-console.log(pangramChecker("The quick  @ brown fox jumps ove the lazy dog"));
+// console.log(pangramChecker("The quick  @ brown fox jumps ove the lazy dog"));
