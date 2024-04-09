@@ -19,7 +19,7 @@
 // let fruits = new Array('apple', 'orange', 'banana')
 
 //? Using array literal
-// let fruits = ["apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana",];
+// let fruits = ["apple", "orange", "banana","apple", "orange"];
 // console.log(fruits);
 // console.log(fruits.length);
 // console.log(fruits[0]);
@@ -60,7 +60,7 @@
 
 // let fruits = ["apple", "orange", "banana", "apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana","apple", "orange", "banana",];
 // let fruits = [798,987,7,987,987,978,798,798,79,879,797,97,979,]
-// fruits[2] = "mango";
+// fruits[2] = "vgtvgvgvgh";
 // console.log(fruits.length);
 
 //* =============================================
@@ -68,7 +68,7 @@
 //* ============================================
 //?👉 Array Traversal / Iterating Over Arrays
 
-// let fruits = ["apple", "orange", "mango", "grapes", "banana"];
+let fruits = ["apple", "orange", "mango", "grapes", "banana"];
 
 //? 1: for of loop , also known as iterable
 //* for...of Loop: The for...of loop is used to iterate over the values of an iterable object, such as arrays, strings, or other iterable objects.
@@ -79,8 +79,8 @@
 // }
 
 // Simple for loop:
-// const a= fruits.length -1
-// for (let item = 0; item <= a; item++) {
+// const a= -1
+// for (let item = 0; item < fruits.length ; item++) {
 //   console.log(fruits[item]);
 // }
 // for (let item = 0; item <= a; item++) {
@@ -99,19 +99,19 @@
 // ? 3: forEach Method
 //* The arr.forEach() method calls the provided function once for each element of the array. The provided function may perform any kind of operation on the elements of the given array.
 
-// const myForEachArr =  fruits.forEach((fruit, index, arr) => {
-//   // console.log(` my fav fruit is at index=${index}  value=${fruit}`);
-//   return `${fruit}`
-//     console.log(arr);
-// });
-// console.log(myForEachArr);
+const myForEachArr =  fruits.forEach((fruit, index, arr) => {
+  console.log(` my fav fruit is at index=${index}  value=${fruit}`);
+   `${fruit}`
+    console.log(arr);
+});
+console.log(myForEachArr);
 
 // ? 4: map function
 //* map() creates a new array from calling a function for every array element. map() does not change the original array.
 
-// const myMapArr = fruits.map((fruit, index) => {
+// const myMapArr = fruits.map((fruit, index , arr) => {
+//   // console.log(arr);
 //   return ` my fav fruit is at index=${index}  value=${fruit}`;
-//   //   console.log(arr);
 // });
 
 // console.log(myMapArr);
@@ -181,13 +181,27 @@
 //* syntax
 //? splice(index, howManyDelete, item1, ....., itemX)
 // let fruits = ["apple", "orange", "banana", "mango"];
-// fruits.splice(2, 0 , "grapes", "eceee" , "huiyghiuyg");
+// fruits.splice(2, -2 , "ghvvhg");
 // console.log(fruits);
 
 // //! what if you want to add the element at the end
-// fruits.splice(-1, 0, "grapes");
+// fruits.splice(-1, 0,"vvgvhg");
 // fruits.splice(1, 0, "grapes");
 // console.log(fruits);
+
+
+// const myFish = ["angel", "clown", "mandarin", "sturgeon"];
+// const removed = myFish.splice(-2, 1);
+
+// myFish is ["angel", "clown", "sturgeon"]
+// removed is ["mandarin"]
+
+// const myFish = ["angel", "clown", "mandarin"];
+// const removed = myFish.splice(myFish.length, 0, "sturgeon");
+
+// myFish is ["angel", "clown", "mandarin", "sturgeon"]
+// no items removed
+
 
 //* =========================================
 //*  Searching in an Array
@@ -214,8 +228,8 @@
 // console.log(numbers.indexOf("banana" , 3)); 
 
 //? 2: lastIndexOf Method: The lastIndexOf() method of Array instances returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.
-// const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
-// const result1 = numbers.indexOf(6);
+const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
+// const result1 = numbers.indexOf(6 ,4);
 // console.log(result1);
 // const result2 = numbers.lastIndexOf(6);
 // console.log(result2);
@@ -228,8 +242,8 @@
 // includes(searchElement, fromIndex);
 
 // const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
-// const result = numbers.includes(2 , 4);
-// console.log(result);
+const result = numbers.includes(2 ,4 );
+// console.log(numbers.indexOf());
 
 //todo Challenge time
 //? 1: Add Dec at the end of an array?
