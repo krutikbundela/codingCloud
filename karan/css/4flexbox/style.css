@@ -70,41 +70,31 @@ main {
   /* justify-content: center; */
   /* align-items: center; */
 
-  .about {
-    flex: 3;
-    height: 100%;
+   p {
+      width: 90%;
+      text-align: justify;
+    }
+
+
+    .about ,.main ,.main2{
+       height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-
-    p {
-      width: 90%;
     }
+
+  .about {
+    flex: 3;
+
   }
   .main {
     flex: 4;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-
-    p {
-      width: 90%;
-    }
+    
   }
   .main2 {
     flex: 3;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
 
-    p {
-      width: 90%;
-    }
   }
 }
 
@@ -113,4 +103,92 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+
+@media (max-width: 1241px) {
+  main {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 990px) {
+  main {
+    height: 60vh;
+  }
+}
+@media (max-width: 720px) {
+  main {
+    height: 70vh;
+
+    .about , .main,.main2 {
+      flex: 1;
+    }
+  }
+}
+@media (max-width: 610px) {
+  main {
+    height: fit-content;
+ display: flex;
+ flex-direction: column;
+    .about , .main,.main2 {
+      padding: 20px 0px;
+      p{
+        margin-top: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 475px) {
+  
+  h1 {
+  font-size: 2.9rem;
+}
+h2 {
+  font-size: 1.9rem;
+}
+
+  
+  nav{
+    height: fit-content;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+
+     .nav_logo,
+  .nav_links,
+  .nav_icons {
+    margin: 4px 0px;
+
+  }
+
+  }
+}
+@media (max-width: 475px) {
+ nav{
+ 
+.nav_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+    a{
+      text-align: center;
+      /* margin: 5px 0px; */
+    }
+  }
+  }
+}
+
+@media (max-width: 280px) {
+    h1 {
+  font-size: 2.2rem;
+}
+h2 {
+  font-size: 1.9rem;
+}
 }
