@@ -27,7 +27,7 @@
 // \\	    \	        Backslash
 // \n                 New Line
 
-// let text = "My name is \"krutik\" \\ & I am a Full Stack Developer. ";
+// let text = "My name is \"krutik\" \\ & I am a \n 'Full' Stack Developer. ";
 // let text =
 //   "My name is ' Krutik ' & \\ I am a \"Full Stack \" Developer. ";
 // // let text = 'My name is " Krutik " & I am a Full Stack Developer. ';
@@ -68,7 +68,7 @@
 //? c:  search(): The search() method searches a string for a string (or a regular expression) and returns the position of the match.
 //* Returns the index number where the first match is found. Returns -1 if no match is found.
 
-// let result = text.search(/kkk/i);
+// let result = text.search(/JavaSCRIPT/i);
 // console.log(result);
 
 //*👉 Important Tips
@@ -156,7 +156,7 @@
 
 // let text = "Hello JavaScript, welcome to our world best JavaScript course";
 // let result = text.slice(6);
-// let result = text.slice(6, 15);
+// let result = text.slice(6, 17);
 // console.log(result);
 
 // subString() substring()
@@ -177,7 +177,7 @@
 
 //! Homework
 // let text = "Hello JavaScript, welcome to our world best JavaScript course";
-// let result = text.substring(0);
+// let result = text.substring(6, 16);
 // let result = text.substring(1);
 // let result = text.substring(-5);
 // console.log(result);
@@ -197,6 +197,19 @@
 //? Optional
 // let result = text.replace("JavaScript", "Krutik");
 // let result = text.replaceAll("JavaScript", "Krutik");
+// let text = "Hello JavaScript, welcome to our world best JavaScript course";
+
+// Replace the second occurrence of "JavaScript" with "Krutik"
+
+// let text = "Hello JavaScript, welcome to our world best JavaScript course";
+
+// let count = 0;
+// let result = text.replace(/JavaScript/g, function (match) {
+//   count++;
+//   console.log(match);
+//   return count === 2 ? "Krutik" : "";
+// });
+// console.log(result);
 
 // console.log(result);
 
@@ -217,7 +230,7 @@
 // console.log(result);
 
 //? charCodeAt() : The charCodeAt() method returns the code of the character at a specified index in a string. The method returns a UTF-16 code (an integer between 0 and 65535).
-// let text = "Hello JavaScript, welcome to our world best JavaScript course";
+// let text = "Hello aavaScript, welcome to our world best JavaScript course";
 // let result = text.charCodeAt(6);
 // console.log(result);
 
@@ -257,7 +270,7 @@
 // console.log(str.toLowerCase()); // Outputs: javascript
 
 //? trim: Removes whitespace from both ends of the string.
-// const str = "   Hello, World!   ";
+// const str = "   Hello,     World!   ";
 // console.log(str.length);
 
 // let trimStr = str.trim();
@@ -275,7 +288,7 @@
 
 //! 1: Write a JavaScript function that prints the letters 'a' through 'z' in the console. You should use a loop to iterate through the letters and print each one on a new line.
 
-// console.log("a".charCodeAt(0));
+// console.log("ab".charCodeAt(1));
 // console.log("z".charCodeAt(0));
 
 // for (let char = 97; char <= 122; char++) {
